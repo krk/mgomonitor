@@ -8,8 +8,8 @@
 package mgomonitor
 
 import (
+	"github.com/globalsign/mgo"
 	"github.com/prometheus/client_golang/prometheus"
-	"gopkg.in/mgo.v2"
 )
 
 // Collector is a prometheus.Collector that reports the values

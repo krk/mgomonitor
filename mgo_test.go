@@ -7,12 +7,12 @@ import (
 	"testing"
 
 	qt "github.com/frankban/quicktest"
+	"github.com/globalsign/mgo"
 	"github.com/google/go-cmp/cmp"
 	"github.com/prometheus/client_golang/prometheus"
 	dto "github.com/prometheus/client_model/go"
-	"gopkg.in/mgo.v2"
 
-	"github.com/juju/mgomonitor"
+	"github.com/krk/mgomonitor"
 )
 
 var _ prometheus.Collector = (*mgomonitor.Collector)(nil)
